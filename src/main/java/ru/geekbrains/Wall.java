@@ -5,6 +5,7 @@ class Wall implements Way{
     private int height;
 
     public Wall(String s, int height) {
+
         this.height = height;
     }
 
@@ -14,7 +15,7 @@ class Wall implements Way{
 
     @Override
     public boolean doIt(Host player) {
-        return player.Jump(height);
+        return player.jump(height);
     }
 }
 
