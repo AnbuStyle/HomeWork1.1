@@ -2,7 +2,7 @@ package ru.geekbrains;
 
 class Wall implements Way{
 
-    private int height;
+    private final int height;
 
     public Wall(String s, int height) {
 
