@@ -24,11 +24,11 @@ public class Main {
             }
         }
 
-        for (int i = 0; i < team.length; i++) {
+        for (Host host : team) {
 
-            for (int j = 0; j < way.length; j++) {
-                var b = way[j].doIt(team[i]);
-                if (!b) {
+            for (Way value : way) {
+                boolean checker = value.doIt(host); // узнал, что var в java 8 отсутсвует)
+                if (!checker) {
                     break;
                 }
             }

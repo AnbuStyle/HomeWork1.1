@@ -2,7 +2,7 @@ package ru.geekbrains;
 
 class Track implements Way {
 
-    private int length;
+    private final int length;
 
     public Track(String s, int length) {
 
