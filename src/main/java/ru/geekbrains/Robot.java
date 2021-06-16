@@ -13,7 +13,7 @@ public class Robot implements Host {
     }
 
     @Override
-    public boolean Jump(int height) {
+    public boolean jump(int height) {
         if  (height <= makeJump) {
             System.out.println(name + " перепрыгнул");
             return true;
@@ -22,10 +22,9 @@ public class Robot implements Host {
             return false;
         }
 
-
     }
     @Override
-    public boolean Run(int length) {
+    public boolean run(int length) {
         if (length <= makeRun) {
             System.out.println(name + " пробежал");
             return true;

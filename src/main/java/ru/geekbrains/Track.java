@@ -15,6 +15,6 @@ class Track implements Way {
 
     @Override
     public boolean doIt(Host player) {
-        return player.Run(length);
+        return player.run(length);
     }
 }
